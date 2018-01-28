@@ -1,4 +1,4 @@
-package zx.zw.titlebar.tool;
+package zx.zw.titlebar.toolbar.base;
 
 import android.app.Activity;
 import android.content.Context;
@@ -84,12 +84,12 @@ public  abstract class BaseTitleBar {
     public abstract static class Builder{
         public    Context   mContext;
 
-        protected String mTitle;
-        protected String mLeftText;
-        protected int mLeftIcon;
-        protected String mRightText;
-        protected int mRightIcon;
-        protected ClickLisenter mListener;
+        public String mTitle;
+        public String mLeftText;
+        public int mLeftIcon;
+        public String mRightText;
+        public int mRightIcon;
+        public OnTitleLisenter mListener;
         public ViewGroup mParent;
 
 
@@ -126,24 +126,18 @@ public  abstract class BaseTitleBar {
         }
 
 
-        public Builder addListener(ClickLisenter listener){
+        public Builder addListener(OnTitleLisenter listener){
             mListener = listener;
             return this;
         }
 
-
-
-
+        /**
+         * 将Builder的值通过构造方法传给BaseTitleBar
+         * 在BaseTitleBar中获取参数的值
+         * @return
+         */
         public abstract BaseTitleBar build();
 
-
-        public abstract static class ClickLisenter{
-
-            public  void onLeftText(){};
-            public  void onLeftIcon(){};
-            public  void onRightText(){};
-            public  void onRightIcon(){};
-        }
 
     }
 

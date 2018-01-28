@@ -1,4 +1,4 @@
-package zx.zw.titlebar.tool;
+package zx.zw.titlebar.toolbar;
 
 import android.app.Activity;
 import android.content.Context;
@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import zx.zw.titlebar.R;
+import zx.zw.titlebar.toolbar.base.BaseTitleBar;
 
 /**
  * @author zxKueen 2018/1/29 1:19

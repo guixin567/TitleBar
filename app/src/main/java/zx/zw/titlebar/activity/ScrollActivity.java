@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 import zx.zw.titlebar.R;
 import zx.zw.titlebar.adapter.ScrollAdapter;
-import zx.zw.titlebar.tool.ScrollTitleBar;
+import zx.zw.titlebar.toolbar.ScrollTitleBar;
 
 public class ScrollActivity extends AppCompatActivity {
 
@@ -46,6 +46,9 @@ public class ScrollActivity extends AppCompatActivity {
         new ScrollTitleBar.Builder(this,mContainer)
                 .setTitle("可折叠的Toolbar")
                 .setLeftIcon(R.mipmap.ic_back)
+                .setLeftText("左边文字")
+                .setRightIcon(R.mipmap.ic_add)
+                .setRightText("右边文字")
                 .build();
     }
 }

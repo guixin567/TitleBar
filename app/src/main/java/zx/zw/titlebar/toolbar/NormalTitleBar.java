@@ -1,4 +1,4 @@
-package zx.zw.titlebar.tool;
+package zx.zw.titlebar.toolbar;
 
 import android.app.Activity;
 import android.content.Context;
@@ -6,12 +6,13 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import zx.zw.titlebar.R;
+import zx.zw.titlebar.toolbar.base.BaseTitleBar;
 
 /**
  * @author zxKueen 2018/1/27 1:07
  *         email 4994766@qq.com
  */
-public class NormalTitleBar extends BaseTitleBar{
+public class NormalTitleBar extends BaseTitleBar {
 
     public NormalTitleBar(Builder builder) {
         super(builder);
