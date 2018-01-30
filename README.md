@@ -7,7 +7,7 @@
         只需要在相应的Activity或者Fragment中一行代码进行相应的设置
         好处：解耦
 ###    效果
-![Alt text](https://github.com/guixin567/TitleBar/blob/master/image/titlebar.gif)
+![Alt text](https://github.com/guixin567/TitleBar/blob/master/image/result.gif)
 ###    使用方式
 ####   继承BaseTitleBar重写相应的方法
     普通的TitleBar
